@@ -1,5 +1,5 @@
 //
-//  Category.swift
+//  Product.swift
 //  Shopping App Demo
 //
 //  Created by PoGo on 10/6/17.
@@ -9,15 +9,17 @@
 import Foundation
 
 
-struct Category{
+struct Product{
     
     var title: String
+    var price: String
     var imageName: String
     
-    init(title: String, imageName: String){
-        
+    init(title: String, price: String, imageName: String){
         self.title = title
+        self.price = price
         self.imageName = imageName
+        
     }
-
+    
 }
