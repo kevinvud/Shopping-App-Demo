@@ -18,11 +18,7 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         super.viewDidLoad()
         categoryTable.delegate = self
         categoryTable.dataSource = self
-        
-        
-        
-        
-        
+           
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
