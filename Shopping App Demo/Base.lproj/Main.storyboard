@@ -177,22 +177,22 @@
                     </view>
                     <connections>
                         <outlet property="productsCollection" destination="MBR-bL-Udp" id="LHm-RL-A1C"/>
-                        <segue destination="ePf-1u-HcY" kind="show" id="zik-HE-E52"/>
+                        <segue destination="ePf-1u-HcY" kind="show" identifier="productPageToDetail" id="zik-HE-E52"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bnp-Xd-lLU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1432.8" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Product DetailVC-->
         <scene sceneID="YbC-0j-qsn">
             <objects>
-                <viewController id="ePf-1u-HcY" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hZm-fc-VRN">
+                <viewController id="ePf-1u-HcY" customClass="ProductDetailVC" customModule="Shopping_App_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hZm-fc-VRN" customClass="Product">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt02" translatesAutoresizingMaskIntoConstraints="NO" id="MtZ-dl-6md">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt02" translatesAutoresizingMaskIntoConstraints="NO" id="MtZ-dl-6md">
                                 <rect key="frame" x="16" y="103" width="343" height="387"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="387" id="x8F-z5-VZA"/>
@@ -266,6 +266,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Glt-sZ-xSf"/>
                     </view>
+                    <connections>
+                        <outlet property="addToCartButton" destination="6na-66-aVh" id="NL3-FR-ZBK"/>
+                        <outlet property="productImage" destination="MtZ-dl-6md" id="Uww-Uw-eAU"/>
+                        <outlet property="productPrice" destination="q9M-fi-SkU" id="av4-No-PJm"/>
+                        <outlet property="productTitle" destination="gD8-gK-DH9" id="CG8-OS-w4K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S7l-NZ-y00" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

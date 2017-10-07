@@ -41,5 +41,10 @@ class ProductVC: UIViewController,UICollectionViewDelegate, UICollectionViewData
         
         return ProductCell()
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "productPageToDetail", sender: nil)
+    }
 
 }
