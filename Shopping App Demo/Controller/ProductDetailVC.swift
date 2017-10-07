@@ -15,13 +15,26 @@ class ProductDetailVC: UIViewController {
     @IBOutlet weak var productPrice: UILabel!
     @IBOutlet weak var addToCartButton: UIButton!
     
-
+    var productDetail = [Product]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+    
+        let product = productDetail[0]
+        updateViews(product: product)
+        
     }
-
-   
-
+    func initProducts(product: Product){
+        productDetail = [product]
+        
+        
+    }
+    
+    func updateViews(product: Product){
+        productImage.image = UIImage(named: product.imageName)
+        productTitle.text = product.title
+        productPrice.text = product.price
+        
+    }
+    
+    
 }
