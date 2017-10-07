@@ -70,6 +70,7 @@
 				D1617A8A1F87823E00D15A83 /* View */,
 				D1617A8B1F87824A00D15A83 /* Controller */,
 				D1617A771F877FC400D15A83 /* AppDelegate.swift */,
+				D1617A7B1F877FC400D15A83 /* Main.storyboard */,
 				D1617A7E1F877FC400D15A83 /* Assets.xcassets */,
 				D1617A801F877FC400D15A83 /* LaunchScreen.storyboard */,
 				D1617A831F877FC400D15A83 /* Info.plist */,
@@ -101,7 +102,6 @@
 			children = (
 				D1617A791F877FC400D15A83 /* CategoriesVC.swift */,
 				D1E035B81F87A52400A57E64 /* ProductVC.swift */,
-				D1617A7B1F877FC400D15A83 /* Main.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
