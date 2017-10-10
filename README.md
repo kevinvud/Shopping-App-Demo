@@ -16,7 +16,10 @@
 
 ### Description
 
-This is a simple shopping app which has 4 categories. This app will show user all available products in each category with price, title, and image of each item.
+This is a simple shopping app which has 4 categories. This app shows user all available products in each category including each product price, title, and image.
+
+Features:
+
 * Show category to user
 * Separate product in category 
 * Show product price and image(s)
